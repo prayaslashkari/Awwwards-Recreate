@@ -44,7 +44,7 @@ body{
  */
 
 .overlay{
-  display: hidden;
+  display: none;
   position: fixed;
   background-color: black;
   width: 100vw;
