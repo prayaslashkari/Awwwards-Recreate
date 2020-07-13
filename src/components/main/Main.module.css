@@ -1,0 +1,152 @@
+.container{
+    /* border: hotpink solid 1px; */
+    background-color: #F4F7F6;
+    overflow: hidden;
+    
+}
+
+.inner{
+    /* border: red solid 1px; */
+    margin: 0 auto;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.menu{
+   /*  border: red solid 1px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 10px 50px;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.leftbold{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rightlight{
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+.grid{
+    /* border: yellow solid 2px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1800px;  
+    /* justify-content: center;
+    align-self: center; */
+}
+
+.item{
+    /* outline: red solid 1px; */
+    width: 25%;
+}
+
+.itemin{
+    margin: 10px 10px 10px 10px; 
+    /* height: 400px; */
+    background-color: #FFFFFF;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.itemin img{
+    width: 100%;
+}
+
+.capco{
+    /* border: red solid 1px; */
+    font-size: 14px;
+    margin: 15px 15px 0 15px;
+}
+
+.header1{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header2{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.captags{
+    /* border: red solid 1px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    margin: 0 15px 0 15px;
+    margin-top: 8px;
+
+    border-top: rgb(245, 245, 245) solid 1px;
+}
+
+.logos{
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.tags{
+    font-weight: 300;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tags>div{
+    border-radius: 8px ;
+    padding: 2px 8px;
+    margin-left: 4px;
+    color: #FFFFFF;
+}
+
+.color1{
+    background-color: #FF4E4E;
+}
+
+.color2{
+    background-color: #8154EF;
+}
+
+@media screen and (max-width: 1200px) {
+    .grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1800px;  
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .item{
+        width: 100%;
+    } 
+
+    
+}

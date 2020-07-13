@@ -1,0 +1,184 @@
+.container{
+
+}
+
+/* .inner > div{
+    border: purple solid 1px;
+}
+
+.left > div{
+    border: yellow solid 1px;
+}  */
+
+.inner, .left, .right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.rightright{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.alpha{
+    border-right: rgb(230, 230, 230) solid 1px;
+}
+.alpha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+
+#clickable{
+    cursor: pointer;
+}
+
+.alpha img{
+    margin-right: 10px;
+}
+
+.beta{
+    padding:  30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#betaid{
+    display: none;
+}
+
+.gamma{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gammafield input{
+    padding: 30px;
+    width: 100%;
+    font-size: 13px;
+    font-family: inherit;
+}
+
+.gammafield{
+    width: 100%;
+}
+
+.gammacross{
+    padding: 28px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.gamma > div {
+/*     border: yellow solid 1px; */
+}
+
+
+.right{
+    position: relative;
+}
+
+
+.onebutton{
+    /* border: steelblue solid 1px; */
+    width: 280px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* right: 100; */
+    right: 100%;
+    margin-right: 25px;
+}
+
+.quetext{
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.register{
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* .twobutton{
+    
+} */
+.submit a {
+    white-space: nowrap;
+}
+.submit{
+    background-color: #49c5b6;
+    padding: 30px;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .onebutton{
+        display: none;
+    }
+
+    #betaid{
+        display: block;
+    }
+
+    #betaid2{
+        visibility: hidden;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    #buttonid{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 420px){
+
+    #menuid{
+        display: none;
+    }
+
+    .alpha img{
+        margin-right: 0px;
+    }
+
+    .middle svg{
+        
+
+    }
+    
+
+  }
+
+
+
