@@ -15,6 +15,7 @@ const App = () => {
 
   let click = () =>{
     setToggle(!toggle)
+    console.log(toggle)
   }
 
 /*   useEffect(()=>{
@@ -24,11 +25,10 @@ const App = () => {
 
   useEffect(()=>{
     console.log(toggle);
-
-    if(width<=420)
-    {
-      if(toggle)
+    
+    if(toggle)
       {
+        console.log("Animation is triggered!!");
         TweenLite.to(overlay, 1, {left:+300, ease: Power3.easeInOut})
         TweenLite.to(overlay, 1, {display:"block", ease: Power3.easeInOut})
         TweenLite.to(overlay, 1, {opacity: 0.7, ease: Power3.easeOut})
@@ -36,6 +36,27 @@ const App = () => {
         TweenLite.to(main1, 1, {marginLeft: 0, ease: Power3.easeInOut})
       }
     else{
+      console.log("Animation is triggered!!");
+      TweenLite.to(overlay, 1, {left: 0, ease: Power3.easeInOut})
+      TweenLite.to(overlay, 1, {display:"none", ease: Power3.easeInOut})
+      TweenLite.to(overlay, 1, {opacity: 0, ease: Power3.easeIn})
+      TweenLite.to(main, 1, {left: 0, ease: Power3.easeInOut})
+      TweenLite.to(main1, 1, {marginLeft: "-300px", ease: Power3.easeInOut})
+    }
+/* 
+    if(width<=420)
+    {
+      if(toggle)
+      {
+        console.log("Animation is triggered!!");
+        TweenLite.to(overlay, 1, {left:+300, ease: Power3.easeInOut})
+        TweenLite.to(overlay, 1, {display:"block", ease: Power3.easeInOut})
+        TweenLite.to(overlay, 1, {opacity: 0.7, ease: Power3.easeOut})
+        TweenLite.to(main, 1, {left: +300, ease: Power3.easeInOut})
+        TweenLite.to(main1, 1, {marginLeft: 0, ease: Power3.easeInOut})
+      }
+    else{
+      console.log("Animation is triggered!!");
       TweenLite.to(overlay, 1, {left: 0, ease: Power3.easeInOut})
       TweenLite.to(overlay, 1, {display:"none", ease: Power3.easeInOut})
       TweenLite.to(overlay, 1, {opacity: 0, ease: Power3.easeIn})
@@ -46,6 +67,7 @@ const App = () => {
     else{
       if(toggle)
         {
+          console.log("Animation is triggered!!");
           TweenLite.to(overlay, 1, {left:+300, ease: Power3.easeInOut})
           TweenLite.to(overlay, 1, {display:"block", ease: Power3.easeInOut})
           TweenLite.to(overlay, 1, {opacity: 0.7, ease: Power3.easeOut})
@@ -53,13 +75,14 @@ const App = () => {
           TweenLite.to(main1, 1, {marginLeft: 0, ease: Power3.easeInOut})
         }
       else{
+        console.log("Animation is triggered!!");
         TweenLite.to(overlay, 1, {left: 0, ease: Power3.easeInOut})
         TweenLite.to(overlay, 1, {display:"none", ease: Power3.easeInOut})
         TweenLite.to(overlay, 1, {opacity: 0, ease: Power3.easeIn})
         TweenLite.to(main, 1, {left: 0, ease: Power3.easeInOut})
         TweenLite.to(main1, 1, {marginLeft: "-300px", ease: Power3.easeInOut})
       }
-    }
+    } */
 
   },[toggle])
   
