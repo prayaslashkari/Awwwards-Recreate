@@ -11,7 +11,7 @@ const Main = (props) => {
                         <h1 className={styles.leftbold}><a style={{textDecoration: "none", color: "#000000"}} href="#">{props.head1}</a> </h1>
                         <h1 className={styles.rightlight}>{props.headsub1}</h1>
                     </div>                   
-                    <div className={styles.left}>
+                    <div id={styles.leftid} className={styles.left}>
                         <h1 className={styles.leftbold}><a style={{textDecoration: "none", color: "#000000"}} href="#">{props.head2}</a></h1>
                         <h1 className={styles.rightlight}>{props.headsub2}</h1>
                     </div>

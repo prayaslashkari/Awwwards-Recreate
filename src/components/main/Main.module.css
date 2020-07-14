@@ -25,7 +25,6 @@
 .left{
     display: flex;
     flex-direction: row;
-
 }
 
 .leftbold{
@@ -148,5 +147,25 @@
         width: 100%;
     } 
 
-    
+    #leftid{
+        display: none;
+    }
+
+    .rightlight{
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 10px;
+    }
+
+    .menu{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin: 30px 20px 30px;
+     }
+     
+
+    .itemin{
+        margin: 20px; 
+    }
 }

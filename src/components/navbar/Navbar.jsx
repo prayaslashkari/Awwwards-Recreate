@@ -8,6 +8,19 @@ const Navbar = (props) => {
         <div className={styles.container}>
             <div className={styles.inner}>
 
+            {
+                toggle ?
+                (<div className={styles.gammaid}>
+                    <div className={styles.gammafield}>
+                        <input placeholder="SEARCH FOR INSPIRATION" type="text"/>
+                    </div>
+
+                    <div onClick={()=>{setToggle(!toggle)}} className={styles.gammacross}>
+                        <img src="https://img.icons8.com/ios-filled/20/FFFFFF/x.png"/>
+                    </div>
+                </div>) : ''
+            }
+
                 <div className= {styles.left}>
                     <div onClick={props.wierd} id={styles.clickable} className={styles.alpha}>
                         <img src="https://img.icons8.com/ios-filled/15/000000/menu.png"/>

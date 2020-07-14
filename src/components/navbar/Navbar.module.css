@@ -72,6 +72,18 @@
     align-items: center;
 }
 
+.gammaid{
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .gammafield input{
     padding: 30px;
     width: 100%;
@@ -176,7 +188,37 @@
         
 
     }
+
+    .gamma{
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
     
+    .gammaid{
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .gammafield input{
+        padding: 30px 0px 30px 15px;
+        width: 100%;
+        font-size: 13px;
+        font-family: inherit;
+    }
 
   }
 
