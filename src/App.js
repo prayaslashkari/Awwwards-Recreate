@@ -3,6 +3,8 @@ import {Main,Navbar,Sidebar} from './components/index'
 import gsap, {TweenLite, Power3} from "gsap";
 import './App.css';
 
+gsap.registerPlugin(TweenLite, Power3);
+
 const App = () => {
   let main = useRef(null);
   let main1 = useRef(null);
@@ -25,7 +27,7 @@ const App = () => {
 
   useEffect(()=>{
     console.log(toggle);
-    
+
     if(toggle)
       {
         console.log("Animation is triggered!!");
