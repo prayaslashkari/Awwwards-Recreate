@@ -16,6 +16,7 @@
 }
 
 .inner div{
+    border: red solid 1px;
     display: flex;
     flex-direction: column;
     justify-content: center ;
